@@ -9,10 +9,9 @@ int main(int argc, char** argv) {
     CLI::App app{ "Smartcard manager" };
     
     std::string get_readers;
-    app.add_option("-gr,--get_readers", get_readers, "Get readers list");
+    app.add_option("--get_readers", get_readers, "Get readers list");
+    
     CLI11_PARSE(app, argc, argv);
-
-    fmt::print("Start");
 
     SCARDCONTEXT hSC;
     LONG lReturn;
@@ -27,8 +26,6 @@ int main(int argc, char** argv) {
     {
         fmt::print("Success SCardEstablishContext\n");
     }
-
-    fmt::print("Stop");
 
     return 0;
 }

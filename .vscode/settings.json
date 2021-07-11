@@ -1,9 +1,0 @@
-{
-    "cmake.configureOnOpen": true,
-    "cmake.configureSettings": {
-        "CMAKE_TOOLCHAIN_FILE": "C:/Users/evkal/dev/vcpkg/scripts/buildsystems/vcpkg.cmake"
-    },
-    "files.associations": {
-        "iostream": "cpp"
-    }
-}
